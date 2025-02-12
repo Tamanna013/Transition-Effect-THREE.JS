@@ -1,4 +1,4 @@
-import THREE from 'three';
+import * as THREE from 'three';
 import { getFXScene } from './FXScene.js';
 import { getTransition } from './Transition.js';
 
@@ -10,7 +10,7 @@ animate();
 function init() {
     const container = document.getElementById('container');
 
-    const renderer = new THREE.WebGLRenderer({ antialais: true });
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
     container.appendChild(renderer.domElement);
