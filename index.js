@@ -1,7 +1,6 @@
 import THREE from 'three';
 import { getFXScene } from './FXScene.js';
 import { getTransition } from './Transition.js';
-import { Wireframe } from 'three/examples/jsm/Addons.js';
 
 const clock = new THREE.Clock();
 let transition = null;
